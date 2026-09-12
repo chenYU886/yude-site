@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>插件商城 - 屿的 FiveM 工作室</title>
+<meta name="description" content="屿的 FiveM 工作室插件商城：警察系统、多职业、帮派地盘、手机系统、抢劫玩法、房屋系统、车店改装、HUD、反作弊等，支持 ESX / QBCore / QBox，源码交付，永久免费更新。">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%237c5cff'/><text x='50' y='70' font-size='58' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='bold'>屿</text></svg>">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="plugins">
+<div class="page">
+
+  <div id="app-header"></div>
+
+  <main>
+    <div class="container">
+      <div class="page-hero">
+        <span class="kicker">PLUGIN STORE</span>
+        <h1>插件商城</h1>
+        <p>全部插件源码交付、永久免费更新。购买前请先确认你的服务器框架（ESX / QBCore / QBox），不确定的话加 QQ 问我。</p>
+        <p style="margin-top:14px;color:var(--muted);font-size:13.5px">
+          💡 单价 ¥99 起 · 支持微信 / 支付宝 · 一对一远程安装 · 30 天内免费修 BUG
+        </p>
+      </div>
+    </div>
+
+    <section class="section" style="padding-top:28px">
+      <div class="container">
+        <div class="filters">
+          <div class="chips" id="chips"></div>
+          <div class="search-box">
+            <span>🔍</span>
+            <input type="text" id="search" placeholder="搜索插件名称 / 关键词，如 警察、车店">
+          </div>
+          <select class="sort" id="sort">
+            <option value="default">默认排序</option>
+            <option value="sales">销量优先</option>
+            <option value="price-asc">价格从低到高</option>
+            <option value="price-desc">价格从高到低</option>
+          </select>
+        </div>
+
+        <p style="margin:0 0 16px;color:var(--muted);font-size:13.5px" id="count"></p>
+
+        <div class="plugin-grid" id="plugin-list"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="contact-wrap">
+          <div>
+            <h2>没找到你要的插件？</h2>
+            <p>告诉我你的服务器缺什么功能，我可以帮你找现成的，也可以按需求定制开发。<br>
+              定制开发先出方案和报价，确认后再开工，先付 30% 定金即可。</p>
+            <div style="display:flex;gap:12px;flex-wrap:wrap">
+              <a class="btn btn-primary" href="services.html#custom-dev">了解定制开发</a>
+              <a class="btn btn-ghost" href="index.html#contact">直接联系我</a>
+            </div>
+          </div>
+          <div class="qr-box">
+            <h4>📮 我的联系方式</h4>
+            <div id="contact-info"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="app-footer"></div>
+</div>
+
+<script src="assets/js/config.js"></script>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

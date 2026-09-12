@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>屿的 FiveM 工作室 - FiveM 插件开发 | 开服搭建 | 定制开发</title>
+<meta name="description" content="屿的 FiveM 工作室：专业 FiveM 插件开发与售卖，支持 ESX / QBCore / QBox 全框架。提供开服一条龙搭建、定制插件开发、插件汉化、BUG 修复、地图模型素材与一对一技术指导。源码交付，永久免费更新。">
+<meta name="keywords" content="FiveM插件,FiveM开服,Fivem服务器,QBCore插件,ESX插件,Fivem定制开发,Fivem汉化,FiveM插件购买">
+<meta property="og:title" content="屿的 FiveM 工作室 - 专业 FiveM 插件开发与开服服务">
+<meta property="og:description" content="ESX / QBCore / QBox 全框架插件，源码交付，永久免费更新，一对一远程安装。">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%237c5cff'/><text x='50' y='70' font-size='58' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='bold'>屿</text></svg>">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="home">
+<div class="page">
+
+  <div id="app-header"></div>
+
+  <main>
+    <!-- 轮播大图 -->
+    <section class="slider" id="slider"></section>
+
+    <!-- 数据 -->
+    <div class="stats" id="stats"></div>
+
+    <!-- 分类导航 -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker">CATEGORIES</span>
+          <h2>按分类找插件</h2>
+          <p>六大类目覆盖服务器主流玩法，全部源码交付、永久免费更新。找不到想要的？直接找我定制。</p>
+        </div>
+        <div class="cat-grid" id="cats"></div>
+      </div>
+    </section>
+
+    <!-- 热门插件 -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head between">
+          <div>
+            <span class="kicker">BEST SELLERS</span>
+            <h2>热销插件</h2>
+            <p>卖得最好、反馈最稳的几款，新手服主可以优先考虑。</p>
+          </div>
+          <a class="btn btn-ghost btn-sm" href="plugins.html">查看全部插件 →</a>
+        </div>
+        <div class="plugin-grid" id="hot-plugins"></div>
+      </div>
+    </section>
+
+    <!-- 服务项目 -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head between">
+          <div>
+            <span class="kicker">SERVICES</span>
+            <h2>服务项目</h2>
+            <p>不只卖插件，开服、汉化、修 BUG、定制开发都可以找我。</p>
+          </div>
+          <a class="btn btn-ghost btn-sm" href="services.html">查看报价与详情 →</a>
+        </div>
+        <div class="service-grid" id="services"></div>
+      </div>
+    </section>
+
+    <!-- 服务流程 -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker">PROCESS</span>
+          <h2>合作流程</h2>
+          <p>五步走完，价格透明，先谈方案再付款，不做"付了钱就失联"的事。</p>
+        </div>
+        <div class="steps" id="steps"></div>
+      </div>
+    </section>
+
+    <!-- 公告 -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head between">
+          <div>
+            <span class="kicker">NEWS</span>
+            <h2>最新公告</h2>
+            <p>插件更新、功能上线与重要通知，买过的客户记得常来看看。</p>
+          </div>
+          <a class="btn btn-ghost btn-sm" href="news.html">查看全部公告 →</a>
+        </div>
+        <div class="news-list" id="news"></div>
+      </div>
+    </section>
+
+    <!-- 评价 -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker">REVIEWS</span>
+          <h2>客户怎么说</h2>
+          <p>来自服主的真实反馈（为保护隐私，昵称做了部分打码）。</p>
+        </div>
+        <div class="review-grid" id="reviews"></div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head between">
+          <div>
+            <span class="kicker">FAQ</span>
+            <h2>常见问题</h2>
+            <p>买之前先看这里，能省你不少时间。还有疑问直接加 QQ 问。</p>
+          </div>
+          <a class="btn btn-ghost btn-sm" href="about.html">查看完整售后政策 →</a>
+        </div>
+        <div class="acc" id="faq"></div>
+      </div>
+    </section>
+
+    <!-- 联系 -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-wrap">
+          <div>
+            <span class="kicker" style="color:var(--brand-2);letter-spacing:3px;font-weight:700;font-size:12.5px">CONTACT</span>
+            <h2>现在就来聊聊你的服务器</h2>
+            <p>不管是买插件、开服搭建，还是只想问个技术问题，都可以直接找我。<br>
+              说清楚你的框架（ESX / QBCore / QBox）和需求，我会给你最直接的方案和报价。</p>
+            <div style="display:flex;gap:12px;flex-wrap:wrap">
+              <a class="btn btn-primary" href="plugins.html">先逛逛插件商城</a>
+              <a class="btn btn-ghost" href="services.html">看看服务报价</a>
+            </div>
+          </div>
+          <div class="qr-box">
+            <h4>📮 我的联系方式</h4>
+            <div id="contact-info"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="app-footer"></div>
+</div>
+
+<script src="assets/js/config.js"></script>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>
